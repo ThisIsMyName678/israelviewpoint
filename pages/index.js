@@ -1,14 +1,13 @@
 // pages/index.js
-import React from 'react';
-import Navbar from '../components/Navbar'; 
+import React from "react";
+import Navbar from "../components/Navbar";
+import HeadingSection from "../components/HeadingSection";
 
 function HomePage() {
   return (
     <div>
-      
       <Navbar />
-
-      {/* Add the rest of your content here */}
+      <HeadingSection />
     </div>
   );
 }
