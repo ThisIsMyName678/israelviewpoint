@@ -11,7 +11,7 @@ const VideoCard = ({ video }) => {
     <div className="card flex-shrink-0 w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 md:p-5 lg:p-5 rounded-lg">
       <VideoThumbnail thumbnail={thumbnailURL} videoLink={video.videoLink} />
       <VideoDetails name={video.name} />
-      <ProfileInfo profile={video.profile} />
+      {/* <ProfileInfo profile={video.profile} /> */}
     </div>
   );
 };
