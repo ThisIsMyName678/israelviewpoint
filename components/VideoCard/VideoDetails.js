@@ -6,6 +6,16 @@ const VideoDetails = ({ name, videoLink }) => {
   const handleButtonClick = (videoLink) => {
     console.log(videoLink);
     // Implement your button click logic here using the videoLink prop
+
+    const URL = `https://drive.google.com/uc?export=download&id=${videoLink}`;
+
+    // Create a temporary anchor element to trigger the download
+    const a = document.createElement("a");
+    a.href = URL; // Use the provided videoLink directly
+    a.download = "video.mp4"; // The name for the downloaded file
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
   };
 
   return (
