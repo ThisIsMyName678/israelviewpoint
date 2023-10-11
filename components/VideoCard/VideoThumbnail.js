@@ -10,15 +10,19 @@ const VideoThumbnail = ({ thumbnail, videoLink }) => {
     setIsPopupOpen(true);
   };
 
+  // Define the handleThumbnailClick function to open the popup
+  const handleThumbnailClick = () => {
+    setIsPopupOpen(true);
+  };
+
   return (
     <div className="image-container relative w-full h-48 overflow-hidden rounded-lg">
-      <a href={videoLink} target="_blank" rel="noopener noreferrer">
-        <img
-          src={thumbnail}
-          alt="Video Thumbnail"
-          className="w-full h-full object-cover border-4 border-white bg-blue-500 rounded-lg"
-        />
-      </a>
+      <img
+        src={thumbnail}
+        alt="Video Thumbnail"
+        className="w-full h-full object-cover border-4 border-white bg-blue-500 rounded-lg cursor-pointer"
+        onClick={handleThumbnailClick}
+      />
       <button
         id="popupButton"
         className="play-button popup-button absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"

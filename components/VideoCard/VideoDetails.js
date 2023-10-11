@@ -35,7 +35,7 @@ const VideoDetails = ({ name, videoLink }) => {
         </button>
         <button
           className="btn bg-transparent border-none rounded-full p-2 hover:bg-gray-200 transition-colors duration-300"
-          onClick={() => handleButtonClick(videoLink)}
+          // onClick={() => handleButtonClick(videoLink)}
         >
           <Image src="/images/Share.svg" alt="Share" width={24} height={24} />
         </button>
