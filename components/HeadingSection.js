@@ -13,10 +13,10 @@ const HeadingSection = () => {
   return (
     <div className="content-section py-4 md:py-6 lg:py-8 px-4 md:px-8 lg:px-16 flex justify-between items-center">
       <div className="video-text text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-900">
-        Watch all videos
+        What's going on in Israel?
       </div>
       <div className="language-selection flex items-center gap-4 text-base md:text-lg lg:text-xl font-normal text-gray-600">
-        <span>Select content language</span>
+        <span>Choose your viewpoint's language</span>
         <div className="relative inline-block w-32">
           <select
             className="block w-full py-2 px-4 pr-12 leading-tight bg-white border border-gray-400 rounded-lg appearance-none focus:outline-none focus:border-purple-600 text-gray-600"
