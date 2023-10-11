@@ -1,5 +1,6 @@
-// components/HeadingSection.js
 import React, { useState } from "react";
+import SelectArrow from "../public/images/select-arrow.svg"; // Import the SVG
+import Image from "next/image"; // Import the Image component from Next.js
 
 const HeadingSection = () => {
   // Define dynamic select options
@@ -11,7 +12,7 @@ const HeadingSection = () => {
   ]);
 
   return (
-    <div className="content-section py-4 md:py-6 lg:py-8 px-4 md:px-8 lg:px-16 flex flex-col md:flex-row justify-between items-center">
+    <div className="content-section py-3 md:py-6 lg:py-8 px-4 md:px-8 lg:px-16 flex flex-col md:flex-row justify-between items-center">
       <div className="video-text text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-900">
         What's going on in Israel?
       </div>
@@ -29,18 +30,13 @@ const HeadingSection = () => {
             ))}
           </select>
           <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-            <svg
-              className="w-5 h-5 text-gray-400"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fillRule="evenodd"
-                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                clipRule="evenodd"
-              />
-            </svg>
+            {/* Use Next.js Image component for the select arrow */}
+            <Image
+              src={SelectArrow}
+              alt="Select Arrow"
+              width={20} // Set the width and height as needed
+              height={20}
+            />
           </div>
         </div>
       </div>
