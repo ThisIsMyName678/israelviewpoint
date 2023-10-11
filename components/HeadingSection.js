@@ -11,11 +11,11 @@ const HeadingSection = () => {
   ]);
 
   return (
-    <div className="content-section py-4 md:py-6 lg:py-8 px-4 md:px-8 lg:px-16 flex justify-between items-center">
+    <div className="content-section py-4 md:py-6 lg:py-8 px-4 md:px-8 lg:px-16 flex flex-col md:flex-row justify-between items-center">
       <div className="video-text text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-900">
         What's going on in Israel?
       </div>
-      <div className="language-selection flex items-center gap-4 text-base md:text-lg lg:text-xl font-normal text-gray-600">
+      <div className="language-selection flex flex-col md:flex-row items-center gap-4 text-base md:text-lg lg:text-xl font-normal text-gray-600">
         <span>Choose your viewpoint's language</span>
         <div className="relative inline-block w-32">
           <select
